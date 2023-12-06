@@ -1,0 +1,33 @@
+<div
+  class="modal fade"
+  id="loginModal"
+  tabindex="-1"
+  aria-labelledby="loginModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+         <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+      <div class="modal-body">
+        <div class="login-container">
+          <h1>Login</h1>
+        </div>
+        <form action="/login" method="post">
+            <label for="">Usuário</label>
+            <input type="text" name="email" placeholder="Digite seu e-mail">
+            <label for="password">Senha</label>
+            <input type="password" name="password" placeholder="Digite sua senha">
+            <button type="submit">Entrar</button>
+        </form>
+        <h3>Cadastre-se</h3>
+        <p>Ainda não possui conta? Cadastre-se no site</p>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Cadastrar</a>
+      </div>
+    </div>
+  </div>
+</div>

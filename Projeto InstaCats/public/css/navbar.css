@@ -1,0 +1,30 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EB6440;
+    padding: 0 160px;
+}
+
+nav img {
+    width: 60px;
+    height: 70px;
+    transform: rotate(180deg);
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    color: #000;
+    font-family: "Nunito", sans-serif;
+}
+
+nav a:hover {
+    color: #fff;
+}

@@ -1,0 +1,73 @@
+<section class="section-container">
+  <div class="box-3">
+    <img
+      src="/assets/img/cat01.jpg"
+      alt=""
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    />
+    <img src="/assets/img/cat02.jpg" alt="" />
+    <img src="/assets/img/cat05.jpg" alt="" />
+  </div>
+  <div class="box-2">
+    <img src="/assets/img/cat11.jpg" alt="" />
+    <img src="/assets/img/cat08.jpg" alt="" />
+  </div>
+  <div class="box-1">
+    <img src="/assets/img/cat04.jpg" alt="" />
+  </div>
+  <div class="box-3">
+    <img src="/assets/img/cat12.jpg" alt="" />
+    <img src="/assets/img/cat09.jpg" alt="" />
+    <img src="/assets/img/cat06.jpg" alt="" />
+  </div>
+  <div class="box-2">
+    <img src="/assets/img/cat03.jpg" alt="" />
+    <img src="/assets/img/cat13.jpg" alt="" />
+  </div>
+  <div class="box-1">
+    <img src="/assets/img/cat07.jpg" alt="" />
+  </div>
+</section>
+
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-body img-container">
+        <img src="/assets/img/cat01.jpg" alt="" />
+      </div>
+      <form method="post" id="interactionForm">
+        <div class="barra-interacao">
+          <button type="button" class="btn btn-outline-danger">❤</button>
+          <input
+            type="text"
+            name="comment"
+            class="input-comentario"
+            placeholder="Escreva um comentário..."
+          />
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Seletor do botão de curtir
+        var likeButton = document.querySelector('.btn-outline-danger');
+
+        // Adiciona um ouvinte de eventos ao botão de curtir
+        likeButton.addEventListener('click', function () {
+            // Alterna a classe 'btn-danger' no botão
+            likeButton.classList.toggle('btn-danger');
+        });
+    });
+</script>
